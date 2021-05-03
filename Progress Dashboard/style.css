@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/*-------------------------------
+        Global CSS
+-------------------------------*/
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    margin: 0;
+}
+
+body, h2, h3, p, ul{
+    margin: 0;
+}
+
+main{
+    min-width: 325px;
+}
+
+/* --- Headings --- */
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/* --- Reverse Sections on mobile (default) --- */
+.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 10%;
+}
+
+/*-------------------------------
+        User Bar
+-------------------------------*/
+
+.user-bar{
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 3%;
+}
+
+.user-bar .user-img{
+    background-image: url("Images/Profile.jpg");
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.user-bar .level{
+    border: 5px solid #F9FAFB;
+    background-color: #FFA067;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.user-bar .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile h2{
+    margin: 10% auto;
+    font-weight: 600;
+}
+
+.profile h3{
+    font-size: 18px;
+    color: #A6ADC6;
+}
+
+.user-bar .discount{
+    width: 100%;
+    margin: 10% 0 5% 0;
+    border: 1px solid #EDF0F3;
+    padding: 30px 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.discount p, .program p, .program-2 p, .program-3 p{
+    color: #AAB4C6;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.discount span:last-of-type{
+    margin: 0 0 0 auto;
+    color: #FFA067;
+    padding: 10px 18px;
+    border-radius: 12px;
+    background-color: #F9FAFB;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,.1), inset 2px 2px 2px white;
+}
+
+.courses{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+}
+
+.courses h2{
+    font-weight: bold;
+    text-align: center;
+    margin: 5% 0;
+}
+
+.program, .program-2, .program-3, .task{
+    width: 100%;
+    margin: 2% 0;
+    border: 1px solid #EDF0F3;
+    padding: 30px 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Program 1 */
+.program > h3{
+    color: #5843BE;
+    font-size: 25px;
+}
+
+.program span:first-of-type{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    color: white;
+    background-color: #5843BE;
+    border-radius: 12px;
+    width: 48px;
+    margin: 0 15px;
+}
+
+.program span:last-of-type{
+    width: 50%;
+}
+
+
+/* Program 2 */
+.program-2 > h3{
+    color: #FFA067;
+    font-size: 25px;
+}
+
+.program-2 span:first-of-type{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    color: white;
+    background-color: #FFA067;
+    border-radius: 12px;
+    width: 48px;
+    margin: 0 15px;
+}
+
+.program-2 span:last-of-type{
+    width: 50%;
+}
+
+/* Program 3 */
+.program-3 > h3{
+    color: #FE7066;
+    font-size: 25px;
+}
+
+.program-3 span:first-of-type{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    color: white;
+    background-color: #FE7066;
+    border-radius: 12px;
+    width: 48px;
+    margin: 0 15px;
+}
+
+.program-3 span:last-of-type{
+    width: 50%;
+}
+
+/*-------------------------------
+        Navigation
+-------------------------------*/
+nav{
+    background-color: #F1F3F6;
+    width: 100%;
+    padding: 30px 20px;
+    min-width: 360px;
+}
+
+nav ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav li{
+    margin: 0 auto;
+}
+
+nav li:first-of-type{
+    margin-left: 0;
+}
+
+/*-------------------------------
+     Logo and Sub Items
+-------------------------------*/
+.logo{
+    color: #FA5F1D;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #F1F3F6;
+    box-shadow: inset 2px 2px 10px white, 
+    inset -2px -2px 5px rgba(0,0,0,.2),
+    5px 5px 10px rgba(0,0,0,.1);
+}
+
+.sub-items{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.sub-items li{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #9D9FAD;
+    padding: 22px 20px;
+}
+
+.sub-items #active{
+    color: #5843BE;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 5px 3px rgb(220,225,238), inset -2px -2px 10px 2px white;
+}
+
+/*-------------------------------
+        Containers
+-------------------------------*/
+.container{
+    padding: 0 20px;
+    min-width: 325px;
+}
+
+/*-------------------------------
+        Purple Card
+-------------------------------*/
+.purple-card {
+    background-color: #5843BE;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.purple-card h4{
+    margin: 0 0 5px 0;
+    color: white;
+    padding: 0 10px 0 0;
+}
+
+.purple-card p:first-of-type, .purple-card a{
+    color: white;
+    margin: 0 0 5px 0;
+}
+
+.purple-card h2{
+    color: white;
+    width: 100%;
+    margin: 5px auto;
+}
+.purple-card p:last-of-type{
+    margin: 5px auto;
+    color: #BCB3E5;
+    width: 100%;
+    font-weight: 300;
+}
+
+.purple-card .circles{
+    margin: 5px 0 0 0;
+    display: flex;
+}
+
+.circles li{
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0 0;
+    border-radius: 50%;
+    border: 1px solid white;
+    z-index: 3;
+    background-image: url('Images/profile-4.jpg');
+    background-size: cover;
+}
+
+.circles li:nth-of-type(2){
+    background-color: #242424;
+    margin: 0 0 0 -15px;
+    z-index: 2;
+    background-image: url('Images/profile-2.jpg');
+}
+.circles li:nth-of-type(3){
+    background-color: #242424;
+    margin: 0 0 0 -9px;
+    z-index: 1;
+    background-image: url('Images/profile-3.jpg');
+}
+.circles li:nth-of-type(4){
+    background-image: none;
+    background-color: #FFC632;
+    border: none;
+    margin: 0 0 0 -9px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+}
+
+.purple-card a{
+    margin: 5px 0 0 auto;
+}
+
+/*-------------------------------
+        Rows & Columns
+-------------------------------*/
+.row{
+    justify-content: stretch;
+    height: fit-content;
+}
+
+.col-1{
+    max-width: 580px;
+    margin-bottom: 30px;
+}
+
+.col-2{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 580px;
+    margin-bottom: 30px;
+}
+
+/*-------------------------------
+        Orange Card
+-------------------------------*/
+.orange-card {
+    background-color: #FFEDE6;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #FC7F49;
+    margin: 0 15px 0 0;
+}
+
+.orange-card span{
+    font-size: 30px;
+    margin: 0 auto 15px 0;
+}
+
+.orange-card h3{
+    width: 100%;
+    margin: 5px auto;
+}
+
+.orange-card p{
+    color: #FEC3AB;
+}
+
+/*-------------------------------
+        Light Card
+-------------------------------*/
+.light-card {
+    background-color: #F6F4FF;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #6653C4;
+}
+
+.light-card span{
+    font-size: 30px;
+    margin: 0 auto 15px 0;
+}
+
+.light-card h3{
+    width: 100%;
+    margin: 5px auto;
+}
+
+.light-card p{
+    color: #B2A8E3;
+}
+
+
+/*-------------------------------
+        White Card
+-------------------------------*/
+.white-card {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    border-radius: 12px;
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #242424;
+}
+
+.white-card h3{
+    margin: 0 auto 5px 0;
+}
+
+.white-card p{
+    color: #A6B1C3;
+}
+
+.white-card span{
+    margin: 0 0 5px auto;
+}
+
+.white-card p:first-of-type{
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+.white-card .inner-orange-card{
+    background-color: #FFA067;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    margin: 0 0 15px 0;
+    width: 100%;
+}
+
+.white-card .inner-orange-card p{
+    width: 80%;
+    margin: 0 auto 5px 0;
+    color: #FFD4BA;
+}
+
+.white-card .time{
+    margin: 0 0 5px auto;
+}
+
+.white-card p:last-child{
+    width: 100%;
+}
+
+/*-------------------------------
+        Open Card
+-------------------------------*/
+.open-card {
+    background-color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #242424;
+}
+
+.open-card > div{
+    margin: 0 auto 0 0;
+    padding: 13px 10px 8px 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.open-card img{
+    max-width: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.open-card h2{
+    width: 100%;
+    font-weight: bold;
+    margin: 5% auto 5% auto;
+}
+
+.open-card h3{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.open-card progress{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 75%;
+    height: 10px;
+}
+
+progress::-webkit-progress-bar{
+    background-color: #F5F7F9;
+    border-radius: 12px;
+}
+
+progress::-webkit-progress-value{
+    background-color: #FFA067;
+    border-radius: 12px;
+}
+
+/*-------------------------------
+            Tasks
+-------------------------------*/
+
+.task{
+    margin: 0 0 5% 0;
+}
+
+.task span:first-of-type{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    margin-right: 5%;
+}
+
+.task span:last-of-type{
+    margin: 0 0 0 auto;
+}
+
+#pencil{
+    color: #6653C4;
+}
+
+#book{
+    color: #FFA067;
+}
+
+
+/*-------------------------------
+        Hover Effects
+-------------------------------*/
+.discount span:last-of-type:hover{
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,.1), inset 2px 2px 2px white;
+}
+.discount span:last-of-type:active{
+    box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,.1), inset -2px -2px 2px white;
+}
+
+.sub-items li:active{
+    color: #5843BE;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 5px 3px rgb(220,225,238), inset -2px -2px 10px 2px white;
+}
+
+.logo:hover, .sub-items li:hover, .discount span:last-of-type:hover,
+.task:hover, .white-card #bell, .inner-orange-card:hover{
+    cursor: pointer;
+}
+
+#bell:active{
+    color: #7DDE92;
+}
+
+
+
+/*-------------------------------
+       Desktop Alterations
+-------------------------------*/
+@media  screen and (min-width: 1000px) {
+
+    /* --- Reverse Sections on mobile (defualt) --- */
+    .reverse {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav{
+        padding: 30px auto;
+        display: inline-block;
+        width: 12%;
+        min-width: 12%;
+        max-width: 150px;
+    }
+
+    nav ul{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    nav li, nav li:first-of-type{
+        margin: 30px auto;
+    }
+
+    .logo{
+        color: #FA5F1D;
+        font-size: 50px;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 10px 25px;
+        background-color: #F1F3F6;
+        box-shadow: inset 2px 2px 10px white, 
+        inset -2px -2px 5px rgba(0,0,0,.2),
+        5px 5px 10px rgba(0,0,0,.1);
+    }
+
+    .sub-items{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    h1{
+        font-size: 50px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .user-bar{
+        visibility: visible;
+        width: 45%;
+        background-color: #F9FAFB;
+        padding: 0 3%;
+    }
+    
+    .container{
+        padding: 5% 0 0 0;
+        margin: 0 3%;
+        width: 65%;
+    }
+
+    .row{
+        display: flex;
+        width: 100%;
+        padding: 5% 0;
+    }
+
+    .col-1{
+        width: 50%;
+        margin: 0;
+    } 
+
+    .col-2{
+        width: 50%;
+        margin: 0;
+    }
+
+    .purple-card{
+        margin-right: 15px;
+    }
+
+    .white-card{
+        margin-right: 15px;
+    }
+
+    .open-card h2{
+        font-weight: bold;
+        margin: 5% auto 15% auto;
+    }
+
+    .task{
+        width: 49%;
+    }
+    
+    .row:last-of-type{
+        justify-content: space-between;
+    }
+}
